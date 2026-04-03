@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* ヘッダー */
+header {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+/* メイン */
+main {
+  padding: 20px;
+}
+
+article {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* フッター */
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}

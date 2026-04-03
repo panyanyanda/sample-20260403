@@ -1,0 +1,1 @@
+console.log("サイト読み込みOK");
