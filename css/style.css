@@ -1,41 +1,55 @@
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Yu Gothic", sans-serif;
+  background-color: #f5f3ef;
+  color: #333;
 }
 
-/* ヘッダー */
+/* ヘッダー固定 */
 header {
-  background: #333;
-  color: white;
-  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #e8e3dc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
 }
 
+header h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* ナビ */
 nav a {
-  color: white;
-  margin-right: 10px;
+  margin-left: 15px;
   text-decoration: none;
+  color: #556b2f;
+  font-weight: bold;
 }
 
-/* メイン */
-main {
-  padding: 20px;
+nav a:hover {
+  color: #6b8e23;
 }
 
-article {
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 15px;
+/* セクション */
+section {
+  padding: 100px 20px 60px;
+  min-height: 100vh;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 見出し */
+h2 {
+  color: #6b8e23;
 }
 
 /* フッター */
 footer {
-  background: #eee;
   text-align: center;
-  padding: 10px;
-}
-
-@media (max-width: 600px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-  }
+  padding: 20px;
+  background: #ddd;
 }
