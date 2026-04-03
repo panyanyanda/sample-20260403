@@ -53,3 +53,17 @@ footer {
   padding: 20px;
   background: #ddd;
 }
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+}
